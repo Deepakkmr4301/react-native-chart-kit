@@ -27,7 +27,7 @@ class BarChart extends AbstractChart {
           }
           width={barWidth}
           height={(Math.abs(barHeight) / 4) * 3}
-          fill="green"
+          fill="#8fe139"
         />
       )
     })
