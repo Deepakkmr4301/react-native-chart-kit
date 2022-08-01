@@ -53,7 +53,7 @@ class AbstractChart extends Component {
           y2={(height / 4) * i + paddingTop}
           stroke={this.props.chartConfig.color(0.2)}
           strokeDasharray="5, 10"
-          strokeWidth={1}
+          strokeWidth={0.5}
         />
       )
     })
@@ -74,7 +74,7 @@ class AbstractChart extends Component {
         y2={height - height / 4 + paddingTop}
         stroke={this.props.chartConfig.color(0.2)}
         strokeDasharray="5, 10"
-        strokeWidth={1}
+        strokeWidth={0.5}
       />
     )
   }
@@ -110,7 +110,7 @@ class AbstractChart extends Component {
           textAnchor="end"
           y={(height * 3) / 4 - ((height - paddingTop) / count) * i + 12}
           fontSize={10}
-          fill={this.props.chartConfig.color(0.5)}
+          fill={this.props.chartConfig.color(1)}
         >
           <TSpan inlineSize={40}>
 {yLabel}
@@ -150,7 +150,7 @@ class AbstractChart extends Component {
           }
           y={(height * 3) / 4 + paddingTop + fontSize * 2}
           fontSize={fontSize}
-          fill={this.props.chartConfig.color(0.5)}
+          fill={this.props.chartConfig.color(1)}
           textAnchor="middle"
         >
           {label}
