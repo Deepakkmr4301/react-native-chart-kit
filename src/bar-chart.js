@@ -125,15 +125,7 @@ class BarChart extends AbstractChart {
               paddingTop,
               paddingRight
             })}
-          </G>
-          <G>
-            {this.renderBarTops({
-              ...config,
-              data: data.datasets[0].data,
-              paddingTop,
-              paddingRight
-            })}
-          </G>
+          </G>         
         </Svg>
       </View>
     )
